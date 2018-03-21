@@ -8,6 +8,9 @@
                  [duct/module.web "0.6.4"]
                  [duct/module.ataraxy "0.2.0"]
 
+                 [rum "0.11.2"]
+
+                 ; module.cljs
                  [org.clojure/clojurescript "1.9.946"]
                  [duct/compiler.cljs "0.2.0"]
                  [duct/server.figwheel "0.2.1"]]
