@@ -1,0 +1,9 @@
+{:duct.core/project-ns  jarvis
+ :duct.core/environment :production
+
+ :duct.module/logging {}
+ :duct.module.web/site {}
+ :duct.module/cljs {:main jarvis.client}
+
+ :duct.module/ataraxy
+ {}}
