@@ -4,6 +4,7 @@
             [duct.core :as duct]))
 
 (duct/load-hierarchy)
+(derive :duct.module/cljs :duct/module)
 
 (defn -main [& args]
   (let [keys (or (duct/parse-keys args) [:duct/daemon])]

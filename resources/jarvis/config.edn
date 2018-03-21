@@ -3,7 +3,10 @@
 
  :duct.module/logging {}
  :duct.module.web/site {}
- :duct.module/cljs {:main jarvis.client}
+ :duct.core/handler {:middleware [#ig/ref :duct.middleware.web/format]}
+ :duct.middleware.web/format {}
+ :duct.module/cljs {:main jarvis.client :figwheel true}
 
  :duct.module/ataraxy
- {}}
+ {"/" [:index]}
+ :jarvis.handler/index {}}
