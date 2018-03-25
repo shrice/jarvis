@@ -9,6 +9,9 @@
                  [duct/module.ataraxy "0.2.0"]
 
                  [rum "0.11.2"]
+                 [org.roman01la/citrus "3.0.1"]
+                 [bidi "2.1.3"]
+                 [cljs-react-material-ui "0.2.48"]
 
                  ; module.cljs
                  [org.clojure/clojurescript "1.9.946"]
