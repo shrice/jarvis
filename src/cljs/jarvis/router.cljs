@@ -5,6 +5,7 @@
 
 (def routes
   ["/" [["" :home]
+        ["dictionary" :dictionary]
         [["page/" :page] :home]
         [["tag/" :id] [["" :tag]
                        [["/page/" :page] :tag]]]

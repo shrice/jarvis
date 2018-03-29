@@ -32,7 +32,7 @@
 
 (defn- figwheel-config [path main figwheel]
   {:duct.server/figwheel
-   {:css-dirs ^:displace ["resources" "dev/resources"]
+   {:css-dirs ^:displace [(str path "/css") "dev/resources"]
     :builds   ^:displace
     [{:id           "dev"
       :figwheel     figwheel

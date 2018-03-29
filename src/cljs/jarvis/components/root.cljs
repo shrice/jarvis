@@ -4,6 +4,7 @@
             [cljs-react-material-ui.core :refer [get-mui-theme]]
             [cljs-react-material-ui.rum :as ui]
             [jarvis.components.home :as home]
+            [jarvis.components.dictionary :as dictionary]
             [jarvis.components.header :refer [Header]]))
 
 (rum/defc Root < rum/reactive
@@ -16,4 +17,5 @@
       (Header r route)
       (case route
         :home (home/Home r route params)
+        :dictionary (dictionary/Dictionary r route params)
         [:div "404"])])))
